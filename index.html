@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emile Brenckle</title>
 
-  <meta name="description" content="Je suis Emile un passionné de video, j'ai pu développer mes compétences via mes spécialités...">
-    <meta name="keywords" content="brenckle, emile, brenckleemile, graphiste, videaste, photos, videos">
-    <meta name="author" content="BRENCKLE Emile">
+  <meta name="description"
+    content="Je suis Emile un passionné de video, j'ai pu développer mes compétences via mes spécialités...">
+  <meta name="keywords" content="brenckle, emile, brenckleemile, graphiste, videaste, photos, videos">
+  <meta name="author" content="BRENCKLE Emile">
 
   <!--
     - favicon
@@ -417,7 +418,7 @@
           <h2 class="h2 article-title">CV</h2>
         </header>
 
-       
+
 
         <section class="timeline">
 
@@ -431,6 +432,21 @@
 
           <ol class="timeline-list">
 
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">STAGIAIRE INFOGRAPHISTE & SEO (SANDRO MATERA)</h4>
+
+              <span>28 avril 2025 - 21 juin 2025</span>
+
+              <p class="timeline-text">
+                • Optimisation SEO : sélection de mots-clés, intégration
+                dans les contenus, amélioration de la structure des pages
+                <br>• Retouche photo, mise en page et intégration d’éléments
+                pour réseaux sociaux
+                <br>• Création de visuels et supports print/web
+              </p>
+
+            </li>
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">Vendeur - Étiqueteur - Caissier (Nike)</h4>
@@ -451,7 +467,7 @@
               <span>juil. 2024 — août 2024</span>
 
               <p class="timeline-text">
-                Préparation de colis 
+                Préparation de colis
               </p>
 
             </li>
@@ -618,50 +634,41 @@
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
-      
+
         <section class="projects">
-      
+
           <ul class="filter-list">
-      
             <li class="filter-item">
-              <button class="active" data-filter-btn>Tout</button>
+              <button class="active" data-filter-btn data-filter="tout">Tout</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Vidéo</button>
+              <button data-filter-btn data-filter="video">Vidéo</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn data-filter="web">Web design</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn data-filter="print">Print</button>
             </li>
-      
           </ul>
-      
+
           <div class="filter-select-box">
-      
+
             <button class="filter-select" data-select>
               <div class="select-value" data-select-value>Sélectionner une catégorie</div>
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
             </button>
-      
+
             <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>Tout</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Vidéo</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
+              <li class="select-item"><button data-select-item data-filter="tout">Tout</button></li>
+              <li class="select-item"><button data-select-item data-filter="video">Vidéo</button></li>
+              <li class="select-item"><button data-select-item data-filter="web">Web design</button></li>
+              <li class="select-item"><button data-select-item data-filter="print">Print</button></li>
             </ul>
-      
+
+
           </div>
 
           <ul class="project-list">
@@ -711,7 +718,7 @@
               </a>
             </li>
 
-            
+
 
             <li class="project-item  active" data-filter-item data-category="web design">
               <a href="https://www.figma.com/design/lvHfbQ24Bqfl2Fw0KcZQrI/Untitled?node-id=0-1&t=5e7NEp7hw3GE6e2W-1"
@@ -773,9 +780,10 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:fe5cf889-07d0-45b3-9257-30ae1d573c2e"
-                target="_blank">
+
+
+            <li class="project-item active" data-filter-item data-category="print"><a
+                href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:fe5cf889-07d0-45b3-9257-30ae1d573c2e" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -789,8 +797,42 @@
 
                 <p class="project-category">Photoshop</p>
 
-              </a>
-            </li>
+              </a></li>
+
+
+            <li class="project-item active" data-filter-item data-category="print"><a
+                href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:6c0b369e-96f0-4746-a29d-44abff036455" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/BOOSTER.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Boostez votre com</h3>
+
+                <p class="project-category">Illustrator</p>
+
+              </a></li>
+
+            <li class="project-item active" data-filter-item data-category="print"><a
+                href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:a7c0f451-2be8-499b-923c-d8e354f30904" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ARTC.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Art Cuisines</h3>
+
+                <p class="project-category">Photoshop</p>
+
+              </a></li>
 
             <!-- <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
@@ -846,9 +888,8 @@
               </a>
             </li> -->
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="assets/images/affiche festival_3.pdf"
-                target="_blank">
+            <li class="project-item active" data-filter-item data-category="print"><a
+                href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:89ff3259-8b2b-407f-969e-403120b20c93" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -862,8 +903,9 @@
 
                 <p class="project-category">Photoshop</p>
 
-              </a>
-            </li>
+              </a></li>
+
+
 
             <!-- <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
